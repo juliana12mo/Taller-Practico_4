@@ -1,0 +1,188 @@
+:root {
+  --verde: #afe43e;
+}
+
+body {
+  margin: 0;
+}
+
+.contenedorVertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor {
+  display: flex;
+}
+
+.contenedorCopy {
+  display: flex;
+  gap: 10px;
+  margin-top: -150px;
+
+}
+
+.botonFreeBooking {
+  background-color: var(--verde);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0px;
+  font-weight: bold;
+}
+
+.precio {
+  background-color: #e54746;
+  color: white;
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
+.lugares {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333333;
+  font-weight: normal;
+}
+
+.unsplash {
+  text-decoration: none;
+  color: var(--verde)
+}
+
+.fondo {
+  background-image: url(../recursos/imagenes/imagenViatren.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 530px;
+}
+
+.barra {
+  display: flex;
+  background-color: white;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 30%;
+  height: 20%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 180px;
+}
+
+.itemBarraSeleccionado {
+  background-color: var(--verde);
+  color: white;
+}
+
+.barraLinks {
+  display: flex;
+  justify-content: center;
+}
+
+.barraLinks a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  padding: 27px;
+  margin: 0 0px;
+  color: #9a9a9a;
+  font-size: 15px;
+  border-right: 1px solid rgb(235, 231, 231);
+}
+
+.recuadro {
+  width: 27%;
+  height: 230px;
+  background-color: white;
+  margin-left: 70px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.tarjetas {
+  margin-top: 84px;
+  text-align: center;
+  justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.colorRojoEnTargetas {
+  color: #e55257;
+  font-weight: normal
+}
+
+.tarjetas h3 {
+  background-color: var(--verde);
+  color: white;
+  margin-top: -44px;
+  height: 35px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+}
+
+.tarjetas img {
+  width: 250px;
+  height: 200px;
+}
+
+.tarjetas p {
+  text-align: left;
+  color: var(--verde);
+  font-weight: bold;
+}
+
+.tarjetas button {
+  background-color: var(--verde);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.logos {
+  margin-top: 100px;
+  justify-content: space-between;
+  background-color: #eeeeee;
+  margin-bottom: 100px;
+}
+
+.logos div {
+  width: 100%;
+  border-right: 1px solid #e6e0e0;
+  border-left: 1px solid #e6e0e0;
+  margin-right: 70px;
+  margin-left: 70px;
+} 
+
+
+
+.informacion {
+  justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px;
+  align-items: center;
+  text-align: center;
+}
+
+.informacion a {
+  text-decoration: none;
+  color: var(--verde);
+}
+
+.informacion img {
+  margin-top: -50px;
+  margin-bottom: 100px;
+}

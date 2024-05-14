@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes por Colombia</title>
+    <script src="../Taller Practico_4/js/utilidades.js"></script>
+    <link rel="stylesheet" href="../Taller Practico_4/css/estilos.css">
+</head>
+<body>
+
+    <script>
+        divPadre = crearNodo("div")
+        divPadre.setAttribute("class", "contenedorVertical fondo")
+
+        divPadreBarra = crearNodo("div")
+        divPadreBarra.setAttribute("class", "barra")
+        divHijoIzquierdo = crearNodo("div")
+        divParaImagen = crearNodo("div")
+        agregarNodoAContenedor(divParaImagen, divHijoIzquierdo)
+        imagenLogo = crearNodoIamgen("logo.png", "logo")
+        agregarNodoAContenedor(imagenLogo, divParaImagen)
+        divHijoDerecho = crearNodo("div")
+        navegaadorDeLinks = crearNodo("nav")
+        navegaadorDeLinks.setAttribute("class", "barraLinks")
+        linkHome = crearNodoConTexto("a", "HOME")
+        linkHome.setAttribute("class", "itemBarraSeleccionado")
+        linkHome.style.color = "white";
+        linkService = crearNodoConTexto("a", "SERVICE")
+        linkEvent = crearNodoConTexto("a", "EVENT")
+        linkAbout = crearNodoConTexto("a", "ABOUT US")
+        linkContact = crearNodoConTexto("a", "CONTACT")
+        agregarNodoAContenedor(linkHome, navegaadorDeLinks)
+        agregarNodoAContenedor(linkService, navegaadorDeLinks)
+        agregarNodoAContenedor(linkEvent, navegaadorDeLinks)
+        agregarNodoAContenedor(linkAbout, navegaadorDeLinks)
+        agregarNodoAContenedor(linkContact, navegaadorDeLinks)
+        agregarNodoAContenedor(navegaadorDeLinks, divHijoDerecho)
+        agregarNodoAContenedor(divHijoIzquierdo, divPadreBarra)
+        agregarNodoAContenedor(divHijoDerecho, divPadreBarra)
+        agregarNodoAContenedor(divPadreBarra, divPadre)
+
+
+        divRecuadro = crearNodo("div")
+        divRecuadro.setAttribute("class", "recuadro")
+        precio = crearNodoConTexto("h2", "$8,450")
+        precio.setAttribute("class", "precio")
+        lugares = crearNodoConTexto("h3", "Venice, Italy")
+        lugares.setAttribute("class", "lugares")
+        unsplash = crearNodoConTexto("a", " Unsplash")
+        unsplash.setAttribute("class", "unsplash")
+        descripcion = crearNodoConTexto("p", "Travel is free reponsive template by templatemo. All images used in this template are from")
+        agregarNodoAContenedor(unsplash, descripcion)
+        botonFreeBooking = crearNodoConTexto("button", "FREE-BOOKING")
+        botonFreeBooking.setAttribute("class", "botonFreeBooking")
+        agregarNodoAContenedor(precio, divRecuadro)
+        agregarNodoAContenedor(lugares, divRecuadro)
+        agregarNodoAContenedor(descripcion, divRecuadro)
+        agregarNodoAContenedor(botonFreeBooking, divRecuadro)
+        agregarNodoAContenedor(divRecuadro, divPadre)
+
+
+        divTargetas = crearNodo("div")
+        divTargetas.setAttribute("class", "contenedor tarjetas")
+
+
+        divTargeta1 = crearNodo("div")
+        divItaly = crearNodoConTexto("div")
+        nombreItaly = crearNodoConTexto("h3", "ITALY")
+        agregarNodoAContenedor(nombreItaly, divItaly)
+        agregarNodoAContenedor(divItaly, divTargeta1)
+        divImagenItaly = crearNodo("div")
+        imagenItaly = crearNodoIamgen("destination_1.jpg", "Italy")
+        agregarNodoAContenedor(imagenItaly, divImagenItaly)
+        agregarNodoAContenedor(divImagenItaly, divTargeta1)
+        divLugaresItaly = crearNodo("div")
+        LugaresItaly = crearNodoConTexto("p", "Rome, Milan, Napoles")
+        agregarNodoAContenedor(LugaresItaly, divLugaresItaly)
+        agregarNodoAContenedor(divLugaresItaly, divTargeta1)
+        divHotelItaly = crearNodo("div")
+        hotelItaly = crearNodoConTexto("p", "SILVER HTEL, 4 NIGHTS, 5 STARS")
+        hotelItaly.style.color = "#e55257"
+        agregarNodoAContenedor(hotelItaly, divHotelItaly)
+        agregarNodoAContenedor(divHotelItaly, divTargeta1)
+        divBotonItaly = crearNodo("div")
+        botoItaly = crearNodoConTexto("button", "$2,300 BOOK NOW")
+        agregarNodoAContenedor(botoItaly, divBotonItaly)
+        agregarNodoAContenedor(divBotonItaly, divTargeta1)
+
+        divTargeta2 = crearNodo("div")
+        divFrance = crearNodoConTexto("div")
+        nombreFrance = crearNodoConTexto("h3", "FRANCE")
+        agregarNodoAContenedor(nombreFrance, divFrance)
+        agregarNodoAContenedor(divFrance, divTargeta2)
+        divImagenFrance = crearNodo("div")
+        imagenFrance = crearNodoIamgen("destino_2.jpg", "France")
+        agregarNodoAContenedor(imagenFrance, divImagenFrance)
+        agregarNodoAContenedor(divImagenFrance, divTargeta2)
+        divLugaresFrance = crearNodo("div")
+        lugaresFrance = crearNodoConTexto("p", "Paris, Marseille, Lyon")
+        agregarNodoAContenedor(lugaresFrance, divLugaresFrance)
+        agregarNodoAContenedor(divLugaresFrance, divTargeta2)
+        divHotelFrance = crearNodo("div")
+        hotelFrance = crearNodoConTexto("p", "NEW PLACE, 5 NIGHTS, 5 STARS")
+        hotelFrance.style.color = "#e55257"
+        agregarNodoAContenedor(hotelFrance, divHotelFrance)
+        agregarNodoAContenedor(divHotelFrance, divTargeta2)
+        divBotonFrance = crearNodo("div")
+        botonFrance = crearNodoConTexto("button", "$2,300 BOOK NOW")
+        agregarNodoAContenedor(botonFrance, divBotonFrance)
+        agregarNodoAContenedor(divBotonFrance, divTargeta2)
+
+        divTargeta3 = crearNodo("div")
+        divGermany = crearNodoConTexto("div")
+        nombreGermany = crearNodoConTexto("h3", "GERMANY")
+        agregarNodoAContenedor(nombreGermany, divGermany)
+        agregarNodoAContenedor(divGermany, divTargeta3)
+        divImagenGermany = crearNodo("div")
+        imagenGermany = crearNodoIamgen("destino_3.jpg", "Germany")
+        agregarNodoAContenedor(imagenGermany, divImagenGermany)
+        agregarNodoAContenedor(divImagenGermany, divTargeta3)
+        divLugaresGermany = crearNodo("div")
+        lugaresGermany = crearNodoConTexto("p", "Berlin, Hamburg, Munich")
+        agregarNodoAContenedor(lugaresGermany, divLugaresGermany)
+        agregarNodoAContenedor(divLugaresGermany, divTargeta3)
+        divHotelGermany = crearNodo("div")
+        hotelGermany = crearNodoConTexto("p", "LUXE HOTEL, 5 NIGHTS, 6 STARS")
+        hotelGermany.style.color = "#e55257"
+        agregarNodoAContenedor(hotelGermany, divHotelGermany)
+        agregarNodoAContenedor(divHotelGermany, divTargeta3)
+        divBotonGermany = crearNodo("div")
+        botonGermany = crearNodoConTexto("button", "$3,100 BOOK NOW")
+        agregarNodoAContenedor(botonGermany, divBotonGermany)
+        agregarNodoAContenedor(divBotonGermany, divTargeta3)
+
+        divTargeta4 = crearNodo("div")
+        divSpain = crearNodoConTexto("div")
+        nombreSpain = crearNodoConTexto("h3", "SPAIN")
+        agregarNodoAContenedor(nombreSpain, divSpain)
+        agregarNodoAContenedor(divSpain, divTargeta4)
+        divImagenSpain = crearNodo("div")
+        imagenSpain = crearNodoIamgen("destino_4.webp", "Spain")
+        agregarNodoAContenedor(imagenSpain, divImagenSpain)
+        agregarNodoAContenedor(divImagenSpain, divTargeta4)
+        divLugaresSpain = crearNodo("div")
+        lugaresSpain = crearNodoConTexto("p", "Madrid, Barcelona, Valencia")
+        agregarNodoAContenedor(lugaresSpain, divLugaresSpain)
+        agregarNodoAContenedor(divLugaresSpain, divTargeta4)
+        divHotelSpain = crearNodo("div")
+        hotelSpain = crearNodoConTexto("p", "GOOD HOTEL, 4 NIGHTS, 6 STARS")
+        hotelSpain.style.color = "#e55257"
+        agregarNodoAContenedor(hotelSpain, divHotelSpain)
+        agregarNodoAContenedor(divHotelSpain, divTargeta4)
+        divBotonSpain = crearNodo("div")
+        botonSpain = crearNodoConTexto("button", "$4,800 BOOK NOW")
+        agregarNodoAContenedor(botonSpain, divBotonSpain)
+        agregarNodoAContenedor(divBotonSpain, divTargeta4)
+
+        agregarNodoAContenedor(divTargeta1, divTargetas)
+        agregarNodoAContenedor(divTargeta2, divTargetas)
+        agregarNodoAContenedor(divTargeta3, divTargetas)
+        agregarNodoAContenedor(divTargeta4, divTargetas)
+        agregarNodoAContenedor(divTargetas, divPadre)
+
+
+        divContenedorLogos = crearNodo("div")
+        divContenedorLogos.setAttribute("class", "contenedor logos")
+        divCohete1 = crearNodo("div")
+        cohete1 = crearNodoIamgen("cohete.png", "cohete")
+        agregarNodoAContenedor(cohete1, divCohete1)
+        agregarNodoAContenedor(divCohete1, divContenedorLogos)
+
+        divPalmera1 = crearNodo("div")
+        palmera1 = crearNodoIamgen("playa.png", "Palmera")
+        agregarNodoAContenedor(palmera1, divPalmera1)
+        agregarNodoAContenedor(divPalmera1, divContenedorLogos)
+
+        divDelfin1 = crearNodo("div")
+        delfin1 = crearNodoIamgen("delfin.png", "Delfin")
+        agregarNodoAContenedor(delfin1, divDelfin1)
+        agregarNodoAContenedor(divDelfin1, divContenedorLogos)
+
+        divCohete2 = crearNodo("div")
+        cohete2 = crearNodoIamgen("cohete.png", "cohete")
+        agregarNodoAContenedor(cohete2, divCohete2)
+        agregarNodoAContenedor(divCohete2, divContenedorLogos)
+
+        divPalmera2 = crearNodo("div")
+        palmera2 = crearNodoIamgen("playa.png", "Palmera")
+        agregarNodoAContenedor(palmera2, divPalmera2)
+        agregarNodoAContenedor(divPalmera2, divContenedorLogos)
+
+        divDelfin2 = crearNodo("div")
+        delfin2 = crearNodoIamgen("delfin.png", "Delfin")
+        agregarNodoAContenedor(delfin2, divDelfin2)
+        agregarNodoAContenedor(divDelfin2, divContenedorLogos)
+
+        agregarNodoAContenedor(divContenedorLogos, divPadre)
+
+
+        divContenedorInformacion = crearNodo("div")
+        divContenedorInformacion.setAttribute("class", "contenedor informacion")
+
+        divImagenLogo = crearNodo("div")
+        imagenLogoB = crearNodoIamgen("logo.png", "Logo")
+        agregarNodoAContenedor(imagenLogoB, divImagenLogo)
+        agregarNodoAContenedor(divImagenLogo, divContenedorInformacion)
+
+        divCopy = crearNodo("div")
+        divCopy.setAttribute("class", "contenedorCopy informacion")
+        copy1 = crearNodoConTexto("p", " Copyrigth © 2084 ")
+        aCompany = crearNodoConTexto("a", " Company Name - Travel ")
+        copy2 = crearNodoConTexto("p", " by ")
+        aTemplatmo = crearNodoConTexto("a", "Templatemo")
+        agregarNodoAContenedor(copy1, divCopy)
+        agregarNodoAContenedor(aCompany, divCopy)
+        agregarNodoAContenedor(copy2, divCopy)
+        agregarNodoAContenedor(aTemplatmo, divCopy)
+
+        agregarNodoAContenedor(divCopy, divContenedorInformacion)
+        divImagenContacto = crearNodo("div")
+        imagenContacto = crearNodoIamgen("iconos.png", "iconos")
+        agregarNodoAContenedor(imagenContacto, divImagenContacto)
+        agregarNodoAContenedor(divImagenContacto, divContenedorInformacion)
+        agregarNodoAContenedor(divContenedorInformacion, divPadre)
+        agregarNodoABody(divPadre)
+    </script>
+    
+</body>
+</html>
